@@ -1,0 +1,21 @@
+.body {
+    cursor: url("images/smile.png"), auto;
+}
+.topNav {
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 31px 20%;
+    font-size: 28px;
+    color: #1F1F1F;
+    font-weight: 400;
+}
+.navTitle {
+    display: flex;
+    width: 65%;
+    justify-content: flex-start;
+}
+.navLinks {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
