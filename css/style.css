@@ -1,5 +1,18 @@
-.body {
-    cursor: url("images/smile.png"), auto;
+body {
+    cursor: pointer;
+    background-color: #FAF6EB;
+}
+a:link, a:visited {
+    color: #1f1f1f;
+    text-decoration: none;
+}
+a:hover {
+    color: #3141C4;
+    text-decoration: none;
+}
+a:active {
+    color: #1f1f1f;
+    text-decoration: underline;
 }
 .topNav {
     display: flex;
@@ -18,4 +31,78 @@
     display: flex;
     width: 35%;
     justify-content: space-between;
+}
+.aboutHeading, .aboutHeadingBlue {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 45px;
+    font-weight: 400;
+    display: inline-block;
+}
+.aboutSection {
+    margin: 0px 20%;
+    padding-top: 140px;
+    padding-bottom: 70px;
+}
+.aboutHeading {
+    color: #1f1f1f;
+}
+.aboutHeadingBlue {
+    color: #3141C4;
+}
+.text {
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1f1f1f;
+    font-size: 19px;
+    line-height: 1.5;
+}
+#pink-scribble {
+    position: relative;
+    top: -40px;
+}
+
+.subHeading {
+    display: flex;
+    margin: 0px 20%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1f1f1f;
+    font-size: 19px;
+    font-weight: 300;
+}
+.itemNumber {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1f1f1f;
+    font-size: 19px;
+    font-weight: 300;
+}
+.workInfo {
+    display: flex;
+    flex-direction: row;
+}
+.item-01 {
+    justify-content: flex-start;
+    margin-left: 20%;
+    padding-right: 15px;
+}
+.itemDesc {
+    justify-content: flex-start;
+    margin-right: 20%;
+    margin-top: 0px;
+}
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 16px;
+}
+#aboutItem {
+    margin-top: 10px;
+    width: 482px;
+}
+#tellyfish {
+    float: right;
+    margin-right: 20%;
+    top: -150px;
 }
