@@ -2,15 +2,15 @@ body {
     cursor: url(/images/smile.png);
     background-color: #FAF6EB;
 }
-a:link, a:visited {
+a.topLink:link, a.topLink:visited {
     color: #1f1f1f;
     text-decoration: none;
 }
-a:hover {
+a.topLink:hover {
     color: #3141C4;
     text-decoration: none;
 }
-a:active {
+a.topLink:active {
     color: #1f1f1f;
     text-decoration: underline;
 }
@@ -80,6 +80,16 @@ a:active {
     display: flex;
     flex-direction: row;
 }
+.workListing-2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.workListing-3 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
 .item-01 {
     justify-content: flex-start;
     margin-left: 20%;
@@ -137,6 +147,21 @@ h2 {
     grid-row-end: 3;
     justify-self: end;
 }
+#imageELO {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
+}
+#imageUSDA {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: over;
+    padding-left: 16px;
+}
 
 .exploreButton {
     display: inline-block;
@@ -175,4 +200,60 @@ h2 {
 .button:hover span:after {
     opacity: 1;
     right: 0;
+  }
+
+.footer {
+    display: grid;
+    background: #0A8F69;
+    height: 220px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    grid-template-rows: 73px 73px 73px;
+    grid-template-columns: 20% 23% 17% 20% 20%;
+  }
+.footerTitle {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    color: #FAF6EB;
+    font-weight: 500;
+  }
+a.footerLink:link, a.footerLink:visited {
+    color: #FAF6EB;
+    text-decoration: none;
+  }
+a.footerLink:hover {
+    color: #F1BB26;
+    text-decoration: none;
+  }
+a.footerLink:active {
+    color: #FAF6EB;
+    text-decoration: underline;
+  }
+.email {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+p.footHead {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    color: #FAF6EB;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+p.footSub {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    color: #FAF6EB;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.social {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
   }
