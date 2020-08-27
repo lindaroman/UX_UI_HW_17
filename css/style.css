@@ -178,7 +178,7 @@ h2 {
     cursor: pointer;
     margin: 0px;
   }
-.exploreButton span {
+  .exploreButton span {
     cursor: pointer;
     display: inline-block;
     position: relative;
