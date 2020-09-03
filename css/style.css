@@ -17,7 +17,7 @@ a.topLink:active {
 .topNav {
     display: flex;
     font-family: 'Josefin Sans', sans-serif;
-    margin: 31px 20%;
+    margin: 31px 10%;
     font-size: 28px;
     color: #1F1F1F;
     font-weight: 400;
@@ -32,6 +32,10 @@ a.topLink:active {
     width: 35%;
     justify-content: space-between;
 }
+ul {
+    list-style: none;
+    padding-left: 0;
+}​
 .aboutHeading, .aboutHeadingBlue {
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
@@ -40,15 +44,30 @@ a.topLink:active {
     display: inline-block;
 }
 .aboutSection {
-    margin: 0px 20%;
-    padding-top: 140px;
+    margin: 0px 10%;
+    padding-top: 70px;
     padding-bottom: 70px;
 }
 .aboutHeading {
     color: #1f1f1f;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 45px;
+    font-weight: 400;
+    display: inline-block;
+}
+.aboutMe {
+    display: inline-block;
+    max-width: 60%;
 }
 .aboutHeadingBlue {
     color: #3141C4;
+}
+#howdy {
+    height: 350px;
+    display: inline-block;
+    vertical-align: super;
+    float: right;
 }
 .text {
     display: inline-block;
@@ -64,7 +83,7 @@ a.topLink:active {
 
 .subHeading {
     display: flex;
-    margin: 0px 20%;
+    margin: 0px 10%;
     font-family: 'Josefin Sans', sans-serif;
     color: #1f1f1f;
     font-size: 19px;
@@ -92,13 +111,14 @@ a.topLink:active {
 }
 .item-01 {
     justify-content: flex-start;
-    margin-left: 20%;
+    margin-left: 10%;
     padding-right: 15px;
 }
 .itemTitle {
     justify-content: flex-start;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-top: 0px;
+    max-width: 50%;
 }
 h2 {
     font-family: 'Libre Baskerville', serif;
@@ -112,12 +132,12 @@ h2 {
     width: 482px;
 }
 #descGrid {
-    margin: 0px 20%;
+    margin: 0px 10%;
     padding-top: -20px;
     padding-left: 32px;
     display: grid;
-    grid-template-rows: 130px 130px;
-    grid-template-columns: 240px 240px 290px;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 31% 31% 37%;
     grid-template-areas:
     "desc desc imageTelly"
     "button imageTelly imageTelly"
@@ -146,20 +166,24 @@ h2 {
     grid-row-start: 1;
     grid-row-end: 3;
     justify-self: end;
+    padding-right: 50px;
+    align-self: end;
 }
 #imageELO {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    justify-self: center;
+    justify-self: end;
+    align-self: end;
 }
 #imageUSDA {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    justify-self: over;
+    justify-self: end;
+    align-self: end;
     padding-left: 16px;
 }
 
