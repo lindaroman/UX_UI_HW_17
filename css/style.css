@@ -12,19 +12,29 @@ a.topLink:hover {
 }
 a.topLink:active {
     color: #1f1f1f;
-    text-decoration: underline;
+}
+a.topLink1:link, a.topLink1:visited {
+    color: #3141C4;
+    text-decoration: none;
+}
+a.topLink1:hover {
+    color: #3141C4;
+    text-decoration: none;
+}
+a.topLink1:active {
+    color: #3141C4;
 }
 .topNav {
     display: flex;
     font-family: 'Josefin Sans', sans-serif;
     margin: 31px 10%;
     font-size: 28px;
-    color: #1F1F1F;
     font-weight: 500;
 }
 .navTitle {
     display: flex;
     width: 74%;
+    color: #1F1F1F;
     justify-content: center;
 }
 .navLinksLeft {
@@ -72,6 +82,9 @@ ul {
 .aboutHeadingBlue {
     color: #3141C4;
     margin-left: -47px;
+}
+.workCurrent {
+    color: #3141C4;
 }
 #howdy {
     height: 380px;
