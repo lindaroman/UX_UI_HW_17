@@ -20,16 +20,25 @@ a.topLink:active {
     margin: 31px 10%;
     font-size: 28px;
     color: #1F1F1F;
-    font-weight: 400;
+    font-weight: 500;
 }
 .navTitle {
     display: flex;
-    width: 72%;
-    justify-content: flex-start;
+    width: 74%;
+    justify-content: center;
 }
-.navLinks {
+.navLinksLeft {
     display: flex;
-    width: 28%;
+    width: 13%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
+    float: left;
+}
+.navLinksRight {
+    display: flex;
+    width: 13%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
     justify-content: space-between;
 }
 ul {
@@ -41,7 +50,7 @@ ul {
     font-style: italic;
     font-size: 45px;
     font-weight: 400;
-    display: inline-block;
+    display: inline;
 }
 .aboutSection {
     margin: 0px 10%;
@@ -62,9 +71,10 @@ ul {
 }
 .aboutHeadingBlue {
     color: #3141C4;
+    margin-left: -47px;
 }
 #howdy {
-    height: 330px;
+    height: 380px;
     display: inline-block;
     vertical-align: super;
     float: right;
@@ -79,6 +89,7 @@ ul {
 #pink-scribble {
     position: relative;
     top: -40px;
+    margin-left: 350px;
 }
 
 .subHeading {
