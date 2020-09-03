@@ -111,27 +111,35 @@ ul {
     font-family: 'Josefin Sans', sans-serif;
     color: #1F1F1F;
     font-size: 19px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .itemNumber {
     font-family: 'Josefin Sans', sans-serif;
     color: #1f1f1f;
-    font-size: 19px;
-    font-weight: 300;
+    font-size: 21px;
+    font-weight: 400;
 }
 .workListing {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 /2;
+    justify-self: start;
+    align-self: start;
 }
 .workListing-2 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 /2;
+    justify-self: start;
+    align-self: start;
     padding-top: 20px;
 }
 .workListing-3 {
-    display: flex;
-    flex-direction: row;
-    padding-top: 20px;
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 /2;
+    justify-self: start;
+    align-self: start;
 }
 .item-01 {
     justify-content: flex-start;
@@ -139,10 +147,11 @@ ul {
     padding-right: 15px;
 }
 .itemTitle {
-    justify-content: flex-start;
-    margin-right: 10%;
-    margin-top: 0px;
-    max-width: 50%;
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    align-self: center;
+    justify-self: start;
 }
 h2 {
     font-family: 'Libre Baskerville', serif;
@@ -157,58 +166,74 @@ h2 {
 }
 #descGrid {
     margin: 0px 10%;
-    padding-top: -20px;
-    padding-left: 32px;
+    margin-top: 2px;
     display: grid;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 31% 31% 37%;
+    grid-template-rows: 110px 120px;
+    grid-template-columns: 1% 42% 67%;
     grid-template-areas:
-    "desc desc imageTelly"
-    "button imageTelly imageTelly"
+    "fr img itemTitle"
+    "fr img desc"
     ;
   }
 .descGridArea {
     display: grid;
   }
 #desc {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    align-self: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: start;
 }
 #button {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    align-self: center;
+    align-self: stretch;
+    visibility: hidden;
 }
 #imageTelly {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    justify-self: end;
-    padding-right: 50px;
-    align-self: end;
+    align-self: center;
+    justify-self: start;
+    padding-left: 10px;
 }
 #imageELO {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    justify-self: end;
+    justify-self: center;
     align-self: end;
+    padding-bottom: 15px;
 }
+#descGrid-2 {
+    margin: 0px 10%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 90px 135px;
+    grid-template-columns: 1% 42% auto;
+    grid-template-areas:
+    "fr img itemTitle"
+    "fr img desc"
+    ;
+  }
+.descGridArea-2 {
+    display: grid;
+  }
 #imageUSDA {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    justify-self: end;
+    justify-self: center;
     align-self: end;
-    padding-left: 16px;
+    padding-left: 10px;
+    margin-top: 15px;
 }
 
 .exploreButton {
