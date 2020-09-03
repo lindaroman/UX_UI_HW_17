@@ -64,7 +64,7 @@ ul {
     color: #3141C4;
 }
 #howdy {
-    height: 350px;
+    height: 330px;
     display: inline-block;
     vertical-align: super;
     float: right;
@@ -196,11 +196,12 @@ h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 17px;
     padding: 5px;
-    width: 152px;
-    height: 38px;
+    width: 151px;
+    height: 51px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 0px;
+    border-radius: 55px;
   }
   .exploreButton span {
     cursor: pointer;
