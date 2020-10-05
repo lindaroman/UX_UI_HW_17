@@ -199,8 +199,8 @@ h2 {
     grid-row-start: 1;
     grid-row-end: 3;
     align-self: center;
-    justify-self: start;
-    padding-left: 10px;
+    justify-self: center;
+    padding-right: 8%;
 }
 #imageELO {
     grid-column-start: 2;
@@ -333,3 +333,34 @@ p.footSub {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
   }
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: white;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+.preloader img {
+    transition: all;
+    width: 150px;
+    margin: 0 auto;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    /* transform: rotate(8deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */ 
+    /* transform: rotate(.03turn);  */
+  }
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
